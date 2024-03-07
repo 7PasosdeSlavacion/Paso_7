@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="certificado.css">
+    <title>Generador de Certificado</title>
+</head>
+
+<body>
+
+    <h1>Generador de Certificado</h1>
+    <form target="_blank" id="certificadoForm" action="https://formsubmit.co/iasd.tintal@gmail.com" method="POST">
+
+        <label for="nombre">NOMBRES Y APELLIDOS:</label>
+        <input type="text" id="name" name="name" required oninput="convertirAMayusculas()"><br>
+
+        <label for="correo">Correo Electronico:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="lugar">LUGAR:</label>
+        <input type="text" id="lugar" required oninput="convertirAMayusculas()"><br>
+
+        <!--<input type="submit" class="btn" value="Generar Certificado">-->
+
+        <button type="submit" id="submit">Generar Certificado</button>
+
+    </form>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.66/pdfmake.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.66/vfs_fonts.js"></script>
+    <script src="certificado.js"></script>
+</body>
+
+</html>
