@@ -57,7 +57,7 @@ span {
     font-family: 'Segoe UI', sans-serif;
 }
 
-img {
+.container img {
     filter: drop-shadow(0px 7px 21px #fba806);
     width: 25vw; /* Tamaño de la imagen relativo al ancho de la pantalla */
     height: 50vh; /* Altura ajustada automáticamente */
@@ -127,7 +127,7 @@ img:hover {
         padding: 2vw 3vw; /* Padding más grande para el botón en dispositivos más pequeños */
     }
 
-    img {
+   .container img {
         width: 70vw; /* Tamaño de la imagen más grande para dispositivos más pequeños */
     }
 }
